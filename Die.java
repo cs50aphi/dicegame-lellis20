@@ -24,7 +24,7 @@ public class Die
   }
   public int roll(int sides, int minimum)
   {
-      int x = (int)((Math.random()*sides) + minimum);
+      int x = (int)(Math.random() * (sides - minimum) + minimum);
       min = minimum;
       max = sides;
       lastroll = x;
