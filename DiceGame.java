@@ -20,13 +20,12 @@ public class DiceGame
     Die lonzo2 = new Die();
 
     System.out.println("The range of your two dice will be: " + (minimum1 * 2) + " to " + (maximum1 * 2));
-    System.out.println("If you'd like to proceed to the competition, type 'yes'.");
 
     int playerRoll1 = player1dice.roll(minimum1, maximum1) + player1dice2.roll(minimum1, maximum1);
     int lonzoRoll1 = lonzo.roll(minimum1, maximum1) + lonzo2.roll(minimum1, maximum1);
 
     System.out.println("You have rolled a: " + playerRoll1);
-    System.out.println("Lonzo rolled " + lonzoRoll1);
+    // System.out.println("Lonzo rolled " + lonzoRoll1);
 
     if (playerRoll1 > lonzoRoll1) {
         System.out.println("You have beat Lonzo the Magnificent and have earned the title of Player1 the Subpar!");
